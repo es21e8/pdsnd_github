@@ -31,7 +31,7 @@ ny.csv
 chi.csv
 was.csv
 
-###Tools
+### Tools
 The following were used throughout the development of the project
 - Python 3
 - Jupyter Notebook
