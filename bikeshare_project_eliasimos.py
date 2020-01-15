@@ -19,7 +19,7 @@ month = ['January', 'February', 'March', 'April', 'May', 'June']
 ############################# USEFUL FUNCTIONS ################################
 ###############################################################################
 
-# ask for which of the 3 cities the user wants to explore
+# ask for which one of the 3 cities the user wants to explore
 def get_city():
     city = ''
     while city.lower not in ['new york', 'chicago', 'washington']:
