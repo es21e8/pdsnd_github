@@ -37,5 +37,6 @@ During the development of the project the following GitHub repos were used as re
 - okaysidd
 - xhlow
 
-Other resources
--Stackoverflow
+### Other resources
+- Stackoverflow
+- Hello Kitty Yearbook 2019
