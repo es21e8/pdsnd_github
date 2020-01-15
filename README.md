@@ -31,8 +31,8 @@ ny.csv
 chi.csv
 was.csv
 
-##Tools
-The following were used throughout the development of the project
+### Tools
+The following tools were used throughout the development of the project:
 - Python 3
 - Jupyter Notebook
 - ATOM editor with Pylint
