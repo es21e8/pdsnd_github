@@ -34,7 +34,7 @@ def get_city():
             print('Please enter the correct city name\n')
     return city
 
-# ask whether the users wants to filter by day, month or look at the whole dataset
+# ask whether the users wants to filter by day, month or not filter at all
 def get_filter():
     filter = ""
     while filter.lower() not in ['day', 'month', 'no filter']:
@@ -65,7 +65,7 @@ def get_day():
     day = day_dict[day.lower()]
     return day
 
-# most popular month
+# find the most popular month
 def top_month(df):
     start_time = time.time()
 
@@ -73,7 +73,7 @@ def top_month(df):
     p_month = month[value]
     print('- MONTH: {}'.format(p_month))
 
-# most popular day
+# find the most popular day
 def top_day(df):
     start_time = time.time()
 
@@ -82,14 +82,14 @@ def top_day(df):
     p_day = day[value]
     print(' - DAY: {}'.format(p_day))
 
-# most popular hour
+# find the most popular hour
 def top_hour(df):
     start_time = time.time()
 
     value = int(df['Start Time'].dt.hour.mode())
     print(' - JOURNEY START HOUR: {}:00'.format(value))
 
-# most popular station
+# find the most popular station
 def top_station(df):
     start_time = time.time()
 
@@ -98,7 +98,7 @@ def top_station(df):
     print(' - START STATION: {}'.format(value_start))
     print(' - END STATION: {}'.format(value_end))
 
-# most popular combo station
+# find the most popular combo station
 def top_route(df):
     start_time = time.time()
 
@@ -107,7 +107,7 @@ def top_route(df):
     value = df['trip'].mode().to_string(index = False)
     print(' - JOURNEY (FROM/TO): {}'.format(value))
 
-# most popular travel time
+# find the most popular travel time
 def travel_time(df):
     start_time = time.time()
     total_time = df['Trip Duration'].sum()
